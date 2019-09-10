@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEFU</title>
+    <link rel="stylesheet" href="popup.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="myContainer" style="font-size: 0.9rem;">
+        <div id="help" class="float-right">
+            <a href="#">How It Works!</a>
+        </div>
+        <h4><b>WEFU</b></h4>
+        <hr>
+    </div>
+
+    <div class="myContainer" id="error_section">
+        <p style="font-size: 0.9rem;">
+            The website wasn't recognised or we don't currently support extracting product details from this website. 
+            Full functionality is available when viewing <a href="https://www.amazon.com" target="_blank">Amazon</a>
+            products page. 
+            <br>
+            If you are not connected with Internet Please Check your internet connectivity
+        </p>
+    </div>
+
+    <div id="scrap_section" class="container">
+        <div style="font-size: 0.9rem">
+            <h5>Product Details</h5>
+            <p style="color: red;">
+                Read instructions carefully
+                <ul style="color: red;">
+                    <li>
+                        Please make sure you are on the product page.                        
+                    </li>
+                    <li>
+                        Please select all appropriate details of product before pressing the button.                        
+                    </li>
+                    <li>
+                        If you don't know how this work's visit this page <a href="#">Help</a>
+                    </li>
+                </ul>
+            </p>
+
+            <div class="d-flex justify-content-center">
+                <button id="get_details" type="button" class="btn btn-info" >Get Details</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data section -->
+    <div id="data_section" class="container data_style">
+        <div class="container">
+            <img id="product_img" src="" class="img-thumnail float-right" alt="" width="150">
+        </div>
+        <div style="font-size: 0.9rem">
+            <h5>
+                <span id="product_name" class="d-inline-block text-truncate" style="max-width: 250px;">
+                </span>
+            </h5>
+        </div>
+        <div class="data">
+            <div class="table_style mt-1">
+                <table id="info_table" class="table table-sm table-striped w-50" style="font-size: 0.9rem">
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="sellers">
+                <h5 class="mt-2">Available Sellers</h5>
+                <span id="seller_error" style="color: red;"></span>
+                <table id="seller_table" class="table table-sm table-borderless" style="font-size: 0.9rem">
+                    <thead>
+                        <tr>
+                            <th style="color: #ffffff; background-color: #003554">Price</th>
+                            <th style="color: #ffffff; background-color: #003554">Condition</th>
+                            <th style="color: #ffffff; background-color: #003554">Seller</th>
+                            <th style="color: #ffffff; background-color: #003554">Choice</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spinner Section -->
+    <div class="myContainer" style="font-size: 0.9rem;">
+        <h5 id="wait_heading"></h5>
+    </div>
+    <div id="spinner_bottom" class="d-flex justify-content-center ">
+        <div id="spinner" class="wrapper">
+            <div class="spinner-container">
+                <div class="spinner-layer spinner-layer--blue">
+                    <div class="spinner-clipper spinner-clipper--left">
+                        <div class="spinner-circle"></div>
+                    </div>        
+                    <div class="spinner--patch">
+                        <div class="spinner-circle"></div>
+                    </div>
+                    <div class="spinner-clipper spinner-clipper--right">
+                        <div class="spinner-circle"></div>
+                    </div>
+                </div>
+            
+                <div class="spinner-layer spinner-layer--red">
+                    <div class="spinner-clipper spinner-clipper--left">
+                        <div class="spinner-circle"></div>
+                    </div>        
+                    <div class="spinner--patch">
+                        <div class="spinner-circle"></div>
+                    </div>
+                    <div class="spinner-clipper spinner-clipper--right">
+                        <div class="spinner-circle"></div>
+                    </div>
+                </div>
+            
+                <div class="spinner-layer spinner-layer--yellow">
+                    <div class="spinner-clipper spinner-clipper--left">
+                        <div class="spinner-circle"></div>
+                    </div>        
+                    <div class="spinner--patch">
+                        <div class="spinner-circle"></div>
+                    </div>
+                    <div class="spinner-clipper spinner-clipper--right">
+                        <div class="spinner-circle"></div>
+                    </div>
+                </div>
+            
+                <div class="spinner-layer spinner-layer--green">
+                    <div class="spinner-clipper spinner-clipper--left">
+                        <div class="spinner-circle"></div>
+                    </div>        
+                    <div class="spinner--patch">
+                        <div class="spinner-circle"></div>
+                    </div>
+                    <div class="spinner-clipper spinner-clipper--right">
+                        <div class="spinner-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="response.js"></script>
+</body>
+</html>
