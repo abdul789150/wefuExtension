@@ -2,7 +2,7 @@
     "name" : "WEFU",
     "version" : "1.0",
     "description" : "A testing extension",
-    "permissions" : ["tabs", "declarativeContent", "storage", "http://localhost:5000/"],
+    "permissions" : ["tabs", "declarativeContent", "storage", "http://localhost:5000/", "http://localhost/"],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "background" : {
         "scripts" : ["background.js"],
@@ -10,7 +10,7 @@
     },
     "browser_action": {
         "default_icon": {
-           "32": "images/get_started32.png"},
+           "32": "images/bag_42.png"},
          "default_title": "WEFU", 
          "default_popup": "popup.html"
      },

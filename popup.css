@@ -25,6 +25,22 @@ a {
     width: 45% !important;
 }
 
+#btn_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.item {
+    position:relative;
+    display:inline-block;
+    margin-right: 18px;
+}
+#badge{
+    position: absolute;
+    right:-5px;
+    top:3px;
+}
+
 /* ====================================================== */
 
 #spinner_bottom{
