@@ -40,13 +40,14 @@
     <!-- Login Section -->
     <div class="myContainer" id="login_section">
         <form id="login_form" action="">
-            <input type="text" name="username_email" id="email" value="">
-            <input type="password" name="password" id="password" value="">
+            <div class="login-input-div mt-2">
+                <input type="text" class="input-form" name="username_email" id="email" placeholder="Enter Email/Username" value="">
+                <input type="password" class="input-form mt-2" name="password" id="password" placeholder="Enter Your Password" value="">
+            </div>
 
-            <button id="login_btn">Login</button>
-        </form>
-        <hr>
-        <button><a href="http://localhost/FYP_WEFU/WEFU/public/register" target="_blank">Sign up</a></button>
+            <button id="login_btn" class="btn btn-primary mt-3" style="width: 70%; margin-left: 15%;">Login</button>
+        </form> 
+        <a class="btn btn-outline-secondary mt-2" style="width: 70%; margin-left: 15%;" href="http://localhost/FYP_WEFU/WEFU/public/register" target="_blank">Sign up</a>
     </div>
 
     <!-- //////////////////////////////////// -->
@@ -129,7 +130,7 @@
                     <span class="pr-2"><i class="fa fa-shopping-bag"></i></span>
                     Add to Cart
                 </button>
-                <button id="checkout_btn" type="button" class="btn btn-success btn-sm m-1">
+                <button id="checkout_btn" type="button" class="btn btn-success btn-sm m-1" hidden>
                     <span class="pr-2"><i class="fa fa-credit-card-alt"></i></span>
                     Checkout
                 </button>
